@@ -24,6 +24,7 @@ jobs:
       - name: Initialize and Push to Hugging Face
         run: |
           rm -rf .git/
+          cd Backend
           git init
           git checkout -b main  # Use 'main' branch; change if needed
           git remote add origin https://huggingface.co/spaces/theSnay/HealthCheckPro
