@@ -35,5 +35,3 @@ jobs:
           git add .
           git commit -m "Initial commit"
           git push origin main --force
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
