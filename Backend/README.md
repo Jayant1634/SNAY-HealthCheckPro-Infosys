@@ -1,5 +1,5 @@
 ---
-title: snayfin
+title: HealthCheckPro
 emoji: 📊
 colorFrom: purple
 colorTo: blue
