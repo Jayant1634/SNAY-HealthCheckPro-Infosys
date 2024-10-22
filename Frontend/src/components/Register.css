@@ -1,0 +1,127 @@
+/* Full-page background with gradient */
+.register-page {
+  background: linear-gradient(135deg, #1c1c1c, #f9fafa, #696a6a);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Image container styling */
+.register-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no image overflow */
+}
+
+.register-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire space without distorting */
+  border-radius: 15px; /* Adds some roundness for a modern look */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Shadow for more depth */
+}
+
+/* Register form box styling with glassmorphism effect */
+.register-box {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Blur background for glass effect */
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.register-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Register form heading */
+.register-box h2 {
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px; /* Add some space below the heading */
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Input field styling with modern look */
+.register-box .form-control {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 14px;
+  border: none; /* Remove default border */
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.register-box .form-control:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 16px rgba(0, 114, 255, 0.4); /* Glow effect on focus */
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Primary button styling with gradient */
+.register-box .btn-primary {
+  background: linear-gradient(45deg, #00c6ff, #0072ff); /* Gradient button */
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 50px; /* Rounded button */
+  width: 100%; /* Full width */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Button hover effect */
+.register-box .btn-primary:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff); /* Inverse gradient on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 114, 255, 0.4); /* Glowing shadow */
+}
+
+/* Link button styling */
+.register-box .btn-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Hover effect for link button */
+.register-box .btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .register-box {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .register-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .register-box .btn-primary {
+    font-size: 16px;
+  }
+}

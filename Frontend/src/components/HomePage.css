@@ -1,0 +1,164 @@
+/* General Styling for HomePage */
+.home-page {
+    padding: 40px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #3b82f6, #60a5fa, #93c5fd) !important;
+    color: #2c3e50;
+    overflow-x: hidden;
+    background-size: 400% 400%;
+    animation: smoothBgShift 20s ease infinite;
+}
+/* Ensure Body Background is Set */
+body {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #3b82f6, #60a5fa, #93c5fd) !important;
+    background-size: 400% 400%;
+    animation: smoothBgShift 20s ease infinite;
+    color: #2c3e50;
+}
+
+/* General Styling for HomePage */
+.home-page {
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+/* Background Animation */
+@keyframes smoothBgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Content Padding */
+.main-content {
+    background-color: #3a3a3a00;
+    padding-top: 100px; 
+}
+
+/* Animated Text */
+.animated-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3a3a3a;
+    animation: fadeInGlow 4s ease-in-out;
+}
+
+@keyframes fadeInGlow {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Feature Cards */
+.futuristic-card {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.144);
+    color: #ffffff;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+}
+
+.futuristic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature Icons */
+.feature-icon {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.futuristic-button {
+    background-color: #1e90ff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.futuristic-button:hover {
+    background-color: #1c87e0;
+    transform: translateY(-3px);
+}
+
+/* Navbar */
+.enhanced-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0.5) !important; /* Slightly transparent */
+    backdrop-filter: blur(10px); /* Apply blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 12px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: 60px;
+    color: #ffffff !important; /* Ensure text remains white */
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Ensure Navbar Brand is Black */
+.enhanced-navbar .heading-navbar {
+    color: #000000 !important; /* Force brand text to be black */
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Links */
+.enhanced-navbar .navbar-nav .nav-link {
+    color: #ffffff !important; /* Ensure navbar links are white */
+}
+
+body.light .enhanced-navbar .navbar-nav .nav-link {
+    color: #212529 !important; /* Dark text for light mode */
+}
+
+.enhanced-navbar .navbar-brand:hover {
+    color: #1e90ff !important; /* Optional: Bright blue on hover */
+}
+
+/* Override Bootstrap hover effect to keep white text */
+.enhanced-navbar .navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* Maintain white color on hover */
+}
+
+/* Smooth Button Hover Effect */
+.futuristic-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.futuristic-button:hover {
+    background: linear-gradient(135deg, #36a2eb, #1e90ff);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(54, 162, 235, 0.7);
+}
+
+/* Flask Image for Larger Display */
+.flask-image {
+    width: 80%; /* Allow the image to take up 80% of its container's width */
+    max-width: 400px; /* Increase the max width to make it appear larger */
+    height: auto;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.flask-image:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 576px) {
+    .flask-image {
+        width: 100%; /* Ensure the image remains responsive on smaller screens */
+        max-width: 300px; /* Adjust the max width for mobile view */
+        height: auto;
+    }
+}

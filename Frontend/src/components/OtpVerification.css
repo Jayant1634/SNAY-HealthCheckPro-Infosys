@@ -1,0 +1,52 @@
+/* OtpVerification.css */
+
+.otp-page {
+    background-color: #f5f7fa;
+  }
+  
+  .otp-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .otp-box h2 {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .otp-box .form-control {
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .otp-box .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .otp-image-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .otp-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Add some padding for smaller screens */
+  @media (max-width: 768px) {
+    .otp-box {
+      margin: 20px;
+    }
+  }
+  
