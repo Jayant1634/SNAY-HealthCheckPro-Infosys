@@ -19,6 +19,7 @@ app.use('/api/goals', goalRoutes);
 app.use('/api/predictions', predictionRoutes);
 
 // MongoDB Connection
+console.log(process.env.MONGODB_URI)
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,

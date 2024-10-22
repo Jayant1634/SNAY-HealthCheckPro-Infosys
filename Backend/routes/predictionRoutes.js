@@ -6,6 +6,7 @@ const axios = require('axios');
 // Get predictions for a user
 router.get('/:userId', async (req, res) => {
   const { userId } = req.params;
+  // this is good
   // Fetch user's transactions from the database and prepare data for prediction
   // For simplicity, we'll just send a static month
   const month = new Date().getMonth() + 1; // Current month
