@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// export const API_URL = 'https://thesnay-snayfin.hf.space/api';
-export const API_URL = 'http://localhost:5000/api';
+export const API_URL = 'https://thesnay-healthcheckpro.hf.space/api';
+// export const API_URL = 'http://localhost:5000/api';
 
 
 export const login = (credentials) => axios.post(`${API_URL}/users/login`, credentials);
